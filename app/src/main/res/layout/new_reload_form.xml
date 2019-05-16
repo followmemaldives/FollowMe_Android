@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	tools:context="com.asif.followme.ShareFormActivity">
+
+
+	<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="15dp"
+			android:layout_marginRight="15dp"
+			android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/reload_layout1"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+
+		<TextView
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:text="Select Device"
+			android:layout_marginTop="10dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+		</TextView>
+		<Spinner
+			android:id="@+id/boat_spinner"
+			style="@style/mySpinnerStyle"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"/>
+
+		<TextView
+				android:id="@+id/package_label"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:text="Reload Options"
+				android:layout_marginTop="10dp"
+				android:layout_width="wrap_content"
+				android:clickable="true"
+				android:focusable="true"
+				android:focusableInTouchMode="true"
+				android:layout_height="wrap_content">
+		</TextView>
+		<Spinner
+				android:id="@+id/package_spinner"
+				style="@style/mySpinnerStyle"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:entries="@array/reload_options_array"
+				android:padding="8dp"/>
+
+		<LinearLayout
+			android:layout_height="50dp"
+			android:weightSum="1"
+			android:id="@+id/linearLayout13"
+			android:layout_marginBottom="20dp"
+			android:layout_marginTop="10dp"
+			android:layout_width="match_parent">
+
+			<Button
+				android:id="@+id/send_reload_btn"
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:layout_toLeftOf="@+id/cancelButton"
+				android:text="Send Reload" />
+
+
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout
+			android:id="@+id/reload_layout2"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+		<TextView
+				android:id="@+id/reload_confirm_msg"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:text="Confirm"
+				android:layout_marginTop="10dp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+		</TextView>
+
+
+		<LinearLayout
+				android:layout_height="50dp"
+				android:weightSum="1"
+				android:layout_marginBottom="20dp"
+				android:layout_marginTop="10dp"
+				android:layout_width="match_parent">
+
+			<Button
+					android:id="@+id/send_reload_btn2"
+					android:layout_height="wrap_content"
+					android:layout_weight=".5"
+					android:layout_width="0dip"
+					android:layout_toLeftOf="@+id/cancelButton"
+					android:text="Send" />
+
+			<Button
+					android:id="@+id/cancel_btn"
+					android:layout_height="wrap_content"
+					android:layout_weight=".5"
+					android:layout_width="0dip"
+					android:layout_alignParentRight="true"
+					android:text="Cancel" />
+
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout
+			android:id="@+id/reload_layout3"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+            android:visibility="gone"
+			android:orientation="vertical">
+
+		<LinearLayout
+				android:id="@+id/spinner_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+			<ProgressBar
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:minHeight="40dp"
+					android:minWidth="40dp"
+					android:layout_centerVertical="true"
+					android:layout_gravity="left" />
+			<TextView
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_marginLeft="10dp"
+					android:text="Please wait..."
+                    android:layout_centerVertical="true"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content">
+			</TextView>
+
+		</LinearLayout>
+
+		<TextView
+				android:id="@+id/reload_error2"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:text="An Error Occured"
+				android:layout_marginTop="10dp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+		</TextView>
+
+		<LinearLayout
+				android:id="@+id/btn_layout3"
+				android:layout_height="50dp"
+				android:layout_marginBottom="20dp"
+				android:layout_marginTop="10dp"
+				android:layout_width="match_parent">
+
+			<Button
+					android:id="@+id/cancel_btn2"
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:layout_alignParentRight="true"
+					android:text="Cancel" />
+
+		</LinearLayout>
+	</LinearLayout>
+	</LinearLayout>
+</android.support.constraint.ConstraintLayout>

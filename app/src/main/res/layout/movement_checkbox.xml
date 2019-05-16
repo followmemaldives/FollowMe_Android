@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:widgetLayout="@style/Theme.AppCompat.Dialog"
+    android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/alertMovementLayout"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_width="fill_parent">
+
+                <CheckBox
+                    android:id="@+id/moveSoundCheckBox"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:text="Sound" />
+
+                <CheckBox
+                    android:id="@+id/moveVibrateCheckBox"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:text="Vibrate" />
+
+            </LinearLayout>
+
+</RelativeLayout>

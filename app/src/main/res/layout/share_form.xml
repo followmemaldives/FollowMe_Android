@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	tools:context="com.asif.followme.ShareFormActivity">
+
+	<ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="15dp"
+		android:layout_marginRight="15dp"
+		android:orientation="vertical">
+
+
+
+		<TextView
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:text="Email"
+			android:layout_marginTop="10dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+		</TextView>
+		<EditText
+			android:id="@+id/share_email_new"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:inputType="textEmailAddress"
+			style="@style/App_EditTextStyle">
+			<requestFocus></requestFocus>
+		</EditText>
+		<EditText
+			android:id="@+id/share_email_edit"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			style="@style/App_EditTextDisable">
+		</EditText>
+
+
+		<TextView
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:text="Permissions"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+		</TextView>
+
+
+
+		<CheckBox
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:id="@+id/checkBox_cl"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentTop="true"
+			android:text="Current Location" />
+		<CheckBox
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:id="@+id/checkBox_hs"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentTop="true"
+			android:text="History / Statistics" />
+		<CheckBox
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:id="@+id/checkBox_ds"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentTop="true"
+			android:text="Allow Sharing" />
+		<CheckBox
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:id="@+id/checkBox_as"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentTop="true"
+			android:text="Device Settings" />
+
+		<CheckBox
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:id="@+id/checkBox_tp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentTop="true"
+			android:visibility="gone"
+			android:text="Trip Plans" />
+		<CheckBox
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:id="@+id/checkBox_bh"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true"
+				android:layout_alignParentTop="true"
+				android:text="Charter / Bidding" />
+
+		<TextView
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:text="Trip Plan"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+		</TextView>
+
+
+
+		<CheckBox
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:id="@+id/checkBox_t1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true"
+				android:layout_alignParentTop="true"
+				android:text="Read Only" />
+		<CheckBox
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:id="@+id/checkBox_t2"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true"
+				android:layout_alignParentTop="true"
+				android:text="Manage Trip Plan" />
+		<CheckBox
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:id="@+id/checkBox_t4"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true"
+				android:layout_alignParentTop="true"
+				android:text="Boat Captain" />
+
+
+		<LinearLayout
+			android:layout_height="50dp"
+			android:weightSum="1"
+			android:id="@+id/linearLayout13"
+			android:layout_marginBottom="20dp"
+			android:layout_marginTop="10dp"
+			android:layout_width="match_parent">
+
+			<Button
+				android:id="@+id/shareButton"
+				android:layout_height="wrap_content"
+				android:layout_weight=".5"
+				android:layout_width="0dip"
+				android:layout_toLeftOf="@+id/cancelButton"
+				android:text="Share" />
+
+			<Button
+				android:id="@+id/cancelShare"
+				android:layout_height="wrap_content"
+				android:layout_weight=".5"
+				android:layout_width="0dip"
+				android:layout_alignParentRight="true"
+				android:text="Cancel" />
+
+		</LinearLayout>
+	</LinearLayout>
+	</ScrollView>
+
+</android.support.constraint.ConstraintLayout>

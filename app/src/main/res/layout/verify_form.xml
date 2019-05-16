@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	tools:context="com.asif.followme.NewGroupForm">
+
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+
+		<ProgressBar
+			android:id="@+id/loading_spinner"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:visibility="gone"
+			android:layout_centerHorizontal="true" />
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="20dp"
+			android:orientation="vertical" >
+
+			<LinearLayout
+				android:id="@+id/layout_step1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					style="@style/TextAppearance.AppCompat.Small"
+					android:text="Display Name: " />
+
+				<EditText
+					android:id="@+id/display_name"
+					style="@style/App_EditTextStyle"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp" >
+				</EditText>
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="5dp"
+					android:text="Display Contact (A mobile phone number): "
+					style="@style/TextAppearance.AppCompat.Small" />
+
+				<EditText
+					android:id="@+id/display_contact"
+					style="@style/App_EditTextStyle"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:inputType="phone"
+					android:padding="8dp" >
+				</EditText>
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/layout_step2"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+				<TextView
+					android:id="@+id/TextView55"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="5dp"
+					android:text="Your Email: "
+					style="@style/TextAppearance.AppCompat.Small" />
+
+				<EditText
+					android:id="@+id/your_email"
+					style="@style/App_EditTextStyle"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:inputType="textEmailAddress"
+					android:padding="8dp" >
+				</EditText>
+			</LinearLayout>
+			<LinearLayout
+				android:layout_height="50dp"
+				android:weightSum="1"
+				android:id="@+id/btn_layout"
+				android:layout_marginBottom="20dp"
+				android:layout_marginTop="10dp"
+				android:layout_width="match_parent">
+
+				<Button
+					android:id="@+id/save_btn"
+					android:layout_height="wrap_content"
+					android:layout_weight=".5"
+					android:layout_width="0dip"
+					android:layout_toLeftOf="@+id/cancelShare"
+					android:text="Verify" />
+
+				<Button
+					android:id="@+id/cancel_btn"
+					android:layout_height="wrap_content"
+					android:layout_weight=".5"
+					android:layout_width="0dip"
+					android:layout_alignParentRight="true"
+					android:text="Cancel" />
+
+			</LinearLayout>
+		</LinearLayout>
+	</RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

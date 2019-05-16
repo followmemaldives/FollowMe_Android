@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+ 
+    <TextView
+        android:id="@+id/vname"
+        android:textSize="16sp"
+        android:textStyle="bold"
+	    android:textColor="#808080"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+	<LinearLayout
+		android:id="@+id/infowindow_layout0"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+		<TextView
+			android:id="@+id/line00"
+			android:textColor="#A0A0A0"
+			android:layout_width="100dip"
+			android:text="Location"
+			android:layout_height="wrap_content" />
+
+		<TextView
+			android:id="@+id/line0"
+			android:textColor="#A0A0A0"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+	</LinearLayout>
+    <LinearLayout
+        android:id="@+id/infowindow_layout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+	    <TextView
+	        android:id="@+id/line10"
+		    android:textColor="#A0A0A0"
+	        android:layout_width="100dip"
+	        android:text="Speed"
+	        android:layout_height="wrap_content" />
+	    
+	    <TextView
+	        android:id="@+id/line1"
+		    android:textColor="#A0A0A0"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/infowindow_layout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+	    <TextView
+	        android:id="@+id/line20"
+		    android:textColor="#A0A0A0"
+	        android:layout_width="100dip"
+	        android:text="Position"
+	        android:layout_height="wrap_content" />
+	    
+	    <TextView
+	        android:id="@+id/line2"
+		    android:textColor="#A0A0A0"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/infowindow_layout4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+	    <TextView
+	        android:id="@+id/line40"
+		    android:textColor="#A0A0A0"
+	        android:layout_width="100dip"
+	        android:text="Last Reported"
+	        android:layout_height="wrap_content" />
+	    
+	    <TextView
+	        android:id="@+id/line4"
+		    android:textColor="#A0A0A0"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/infowindow_layout5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+	    <TextView
+	        android:id="@+id/line50"
+		    android:textColor="#A0A0A0"
+	        android:layout_width="100dip"
+	        android:text="Contact"
+	        android:layout_height="wrap_content" />
+	    
+	    <TextView
+	        android:id="@+id/line5"
+		    android:textColor="#A0A0A0"
+	        android:layout_width="wrap_content"
+	        android:text="*******"
+	        android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    
+</LinearLayout>

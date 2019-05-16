@@ -1,0 +1,51 @@
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/eta_panel"
+        android:enabled="true"
+        android:title=""
+        android:visible="true"
+        app:actionLayout="@layout/eta_panel"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/speed_panel"
+        android:enabled="true"
+        android:title=""
+        android:visible="true"
+        app:actionLayout="@layout/speed_panel"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/neighbour_switch_item"
+        android:enabled="true"
+        android:title=""
+        android:visible="true"
+        app:actionLayout="@layout/switch_neighbour"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/tail_switch_item"
+        android:enabled="true"
+        android:title=""
+        android:visible="true"
+        app:actionLayout="@layout/switch_tail"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_trace"
+        android:orderInCategory="100"
+        android:icon="@drawable/baseline_timeline_white_24dp"
+        android:title="Rrace Route"
+        android:visible="false"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_eta"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_schedule_white_24dp"
+        android:title="ETA"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_alert"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_add_alert_white"
+        android:title="Notification"
+        android:visible="false"
+        app:showAsAction="always"/>
+</menu>

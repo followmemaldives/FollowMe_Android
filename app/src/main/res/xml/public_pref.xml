@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Preferences">
+        <ListPreference
+            android:defaultValue="gb"
+            android:dialogTitle="@string/title_country"
+            android:entries="@array/country_names"
+            android:entryValues="@array/country_values"
+            android:key="@string/title_key_country"
+            android:summary="@string/title_summary_country"
+            android:title="@string/title_country" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

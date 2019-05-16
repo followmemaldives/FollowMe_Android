@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.asif.followme.NewDevice">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/TextView34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Atoll "
+                     />
+                <Spinner
+			        android:id="@+id/atolls_spinner"
+                    style="@style/mySpinnerStyle"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:entries="@array/atoll_list"
+			        />
+
+                <TextView
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/TextView54"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Device Type: "
+                     />
+
+                <Spinner
+                    android:id="@+id/vessel_type_spinner"
+                    style="@style/mySpinnerStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:entries="@array/device_type_array"
+                    android:prompt="@string/device_brand_title"/>
+
+	
+			    <CheckBox
+			        android:id="@+id/device_public_checkbox"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentLeft="true"
+			        android:layout_alignParentTop="true"
+                    android:textSize="14sp"
+			        android:text="Share with Public" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical" >
+
+                    <Button
+        				android:id="@+id/device_filer_btn"
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Filter" />
+                    
+                 </LinearLayout>
+
+                
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

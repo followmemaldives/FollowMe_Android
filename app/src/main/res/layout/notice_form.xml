@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	tools:context="com.asif.followme.NewGroupForm">
+
+	<ScrollView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignParentTop="true" >
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+
+		<ProgressBar
+			android:id="@+id/loading_spinner"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:visibility="gone"
+			android:layout_centerHorizontal="true" />
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="15dp"
+			android:layout_marginRight="15dp"
+			android:orientation="vertical" >
+
+			<TextView
+				android:id="@+id/notice_label"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:text=""
+				android:layout_marginTop="10dp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:maxLines="10"
+				android:minLines="4">
+			</TextView>
+			<EditText
+				android:id="@+id/notice_input"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:inputType="textMultiLine"
+				android:gravity="top|left"
+				android:minLines="4"
+				android:maxLines="10"
+				android:layout_marginTop="10dp"
+				android:scrollbars="vertical"
+				style="@style/App_EditTextStyle">
+				<requestFocus></requestFocus>
+			</EditText>
+
+			<LinearLayout
+				android:layout_height="50dp"
+				android:weightSum="1"
+				android:id="@+id/btn_layout"
+				android:layout_marginBottom="20dp"
+				android:layout_marginTop="10dp"
+				android:layout_width="match_parent">
+
+				<Button
+					android:id="@+id/save_btn"
+					android:layout_height="wrap_content"
+					android:layout_weight=".5"
+					android:layout_width="0dip"
+					android:layout_toLeftOf="@+id/cancelShare"
+					android:text="Save" />
+
+				<Button
+					android:id="@+id/cancel_btn"
+					android:layout_height="wrap_content"
+					android:layout_weight=".5"
+					android:layout_width="0dip"
+					android:layout_alignParentRight="true"
+					android:text="Cancel" />
+
+			</LinearLayout>
+			<TextView
+				android:id="@+id/notice_date"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:text="Updated on:"
+				android:layout_marginTop="10dp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				>
+			</TextView>
+		</LinearLayout>
+	</RelativeLayout>
+	</ScrollView>
+
+</android.support.constraint.ConstraintLayout>

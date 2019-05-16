@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	tools:context="com.asif.followme.TripPlan.NewTemplateForm">
+
+
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_marginLeft="15dp"
+				android:layout_marginRight="15dp"
+				android:orientation="vertical" >
+
+				<TextView
+					android:id="@+id/destinations_label"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:text="Destinations"
+					android:layout_width="wrap_content"
+					android:focusable="true"
+					android:focusableInTouchMode="true"
+					android:layout_height="wrap_content"/>
+				<WebView
+					android:id="@+id/webview"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"/>
+
+				<TextView
+						android:textAppearance="?android:attr/textAppearanceSmall"
+						android:id="@+id/TextView34"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="5dp"
+						android:text="Status: "/>
+				<Spinner
+						android:id="@+id/route_status_input"
+						style="@style/mySpinnerStyle"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:entries="@array/route_status_array"/>
+				<LinearLayout
+					android:layout_height="50dp"
+					android:weightSum="1"
+					android:id="@+id/linearLayout13"
+					android:layout_marginBottom="20dp"
+					android:layout_marginTop="10dp"
+					android:layout_width="match_parent">
+
+					<Button
+						android:id="@+id/save_btn"
+						android:layout_height="wrap_content"
+						android:layout_weight=".5"
+						android:layout_width="0dip"
+						android:layout_toLeftOf="@+id/cancelShare"
+						android:text="Save" />
+
+					<Button
+						android:id="@+id/cancel_btn"
+						android:layout_height="wrap_content"
+						android:layout_weight=".5"
+						android:layout_width="0dip"
+						android:layout_alignParentRight="true"
+						android:text="Cancel" />
+
+				</LinearLayout>
+			</LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

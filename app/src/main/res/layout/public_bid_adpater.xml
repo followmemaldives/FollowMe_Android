@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dip"
+    android:descendantFocusability="blocksDescendants">
+
+    <LinearLayout android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dip">
+
+        <ProgressBar
+            android:id="@+id/progres_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="60dip"
+            android:layout_height="60dip"/>
+
+    </LinearLayout>
+
+    <!-- Title Of Song-->
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="Vessel Name"
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:textSize="15dip"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/bid_price"
+        android:layout_width = "match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#343434"
+        android:layout_marginTop="1dip"
+        android:layout_marginRight="20dp"
+        android:textSize="14dip"
+        android:gravity="right"
+        android:layout_toRightOf="@+id/name"
+        android:text="" />
+
+
+    <!-- Artist Name -->
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:textColor="#343434"
+        android:textSize="12dip"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="Owner..." />
+
+    <TextView
+        android:id="@+id/time_ago"
+        android:layout_width = "match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:textColor="#343434"
+        android:textSize="10dip"
+        android:layout_marginTop="1dip"
+        android:layout_marginRight="20dp"
+        android:gravity="right"
+        android:layout_toRightOf="@+id/description"
+        android:text="" />
+
+
+
+    <RelativeLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/description"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/layout_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                    android:id="@+id/layout_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/img_stop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dip" />
+
+                <TextView
+                    android:id="@+id/txt_island"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10px"
+                    android:paddingTop="0dip"
+                    android:text=""
+                    android:textColor="#343434"
+                    android:textSize="10dip" />
+
+                <TextView
+                    android:id="@+id/txt_speed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10px"
+                    android:paddingTop="8dip"
+                    android:text=""
+                    android:textColor="#343434"
+                    android:textSize="10dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/award_status_box"
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:clickable="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/border_10dp"
+                    android:layout_height="wrap_content">
+                <ImageView
+                        android:id="@+id/bid_win"
+                        android:src="@drawable/trophy"
+                        android:layout_width="18dip"
+                        android:layout_height="18dip"
+                        android:layout_gravity="center_vertical"/>
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/bid_award_status"
+                        android:layout_gravity="fill"
+                        android:gravity="center"
+                        android:textSize="12dip"
+                        android:padding="3dip"
+                        android:text="AWARDED"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:id="@+id/award_accept_box"
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:clickable="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/border_10dp"
+                    android:layout_height="wrap_content">
+                <ImageView
+                        android:id="@+id/award_accept_done"
+                        android:src="@drawable/baseline_done_black_36dp"
+                        android:layout_width="15dip"
+                        android:layout_height="15dip"
+                        android:layout_gravity="center_vertical"/>
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/award_accept_status"
+                        android:layout_gravity="fill"
+                        android:gravity="center"
+                        android:textSize="12dip"
+                        android:padding="3dip"
+                        android:text="CONFIRMED"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:id="@+id/bid_completed_box"
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:clickable="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/border_10dp"
+                    android:layout_height="wrap_content">
+                <ImageView
+                        android:id="@+id/bid_compleated"
+                        android:src="@drawable/baseline_done_black_36dp"
+                        android:layout_width="15dip"
+                        android:layout_height="15dip"
+                        android:layout_gravity="center_vertical"/>
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="fill"
+                        android:gravity="center"
+                        android:textSize="12dip"
+                        android:padding="3dip"
+                        android:text="COMPLETED"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    <LinearLayout
+            android:id="@+id/layout_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+        <Button
+                android:id="@+id/btn_award"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_margin="5dp"
+                android:textSize="10dip"
+                android:background="@drawable/bluebutton_round"
+                android:layout_alignParentRight="true"
+                android:text="AWARD"
+                android:textColor="@android:color/white" />
+        <Button
+                android:id="@+id/btn_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_margin="5dp"
+                android:textSize="10dip"
+                android:background="@drawable/bluebutton_round"
+                android:layout_alignParentRight="true"
+                android:text="RATE"
+                android:textColor="@android:color/white" />
+    </LinearLayout>
+<!--        <LinearLayout
+            android:id="@+id/award_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/bluebutton"
+            android:gravity="right"
+            android:layout_toRightOf="@+id/layout_left"
+            android:clickable="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/bid_award"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:padding="5dip"
+                android:text="AWARD"
+                android:textSize="12dip" />
+
+        </LinearLayout> -->
+
+    </RelativeLayout>
+
+</RelativeLayout>

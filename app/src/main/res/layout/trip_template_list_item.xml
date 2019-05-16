@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dip"
+    android:descendantFocusability="blocksDescendants">
+
+    <LinearLayout android:id="@+id/thumbnail"
+          android:layout_width="50dp"
+          android:layout_height="40dp"
+          android:background="@drawable/border_0dp"
+          android:layout_alignParentLeft="true"
+          android:layout_marginRight="5dip">
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/route_state"
+                android:layout_gravity="center"
+                android:textSize="10sp"
+                android:gravity="center"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:text=""/>
+
+    </LinearLayout>
+
+    <!-- Title Of Song-->
+    <TextView
+        android:id="@+id/route_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vessel Name"
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:textSize="14sp"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"/>
+
+
+     <!-- Rightend Arrow -->
+
+        <ImageView
+                android:id="@+id/item_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_overflow"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	tools:context="com.asif.followme.NewGroupForm">
+
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+
+		<ProgressBar
+			android:id="@+id/loading_spinner"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:visibility="gone"
+			android:layout_centerHorizontal="true" />
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="15dp"
+			android:layout_marginRight="15dp"
+			android:orientation="vertical" >
+
+			<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Please rate your experience if service completed "
+					android:textColor="#343434"/>
+
+		<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:layout_marginTop="10dp">
+			<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:layout_alignParentLeft="true">
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="YOUR RATE "
+					android:textColor="#343434"/>
+			</LinearLayout>
+			<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:layout_alignParentRight="true">
+				<ImageView
+						android:id="@+id/rate_star1"
+						android:layout_width="25dip"
+						android:layout_height="25dip"
+						android:src="@drawable/star0"/>
+				<ImageView
+						android:id="@+id/rate_star2"
+						android:layout_width="25dip"
+						android:layout_height="25dip"
+						android:src="@drawable/star0"/>
+				<ImageView
+						android:id="@+id/rate_star3"
+						android:layout_width="25dip"
+						android:layout_height="25dip"
+						android:src="@drawable/star0"/>
+				<ImageView
+						android:id="@+id/rate_star4"
+						android:layout_width="25dip"
+						android:layout_height="25dip"
+						android:src="@drawable/star0"/>
+				<ImageView
+						android:id="@+id/rate_star5"
+						android:layout_width="25dip"
+						android:layout_height="25dip"
+						android:src="@drawable/star0"/>
+			</LinearLayout>
+
+		</RelativeLayout>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Tell us more"
+				android:textColor="#343434"/>
+			<EditText
+				android:id="@+id/special_info"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:inputType="textMultiLine"
+				android:gravity="top|left"
+				android:minLines="2"
+				android:maxLines="5"
+				android:layout_marginTop="10dp"
+				android:scrollbars="vertical"
+				style="@style/App_EditTextStyle">
+				<requestFocus></requestFocus>
+			</EditText>
+
+			<LinearLayout
+				android:layout_height="50dp"
+				android:weightSum="1"
+				android:id="@+id/btn_layout"
+				android:layout_marginBottom="20dp"
+				android:layout_marginTop="10dp"
+				android:layout_width="match_parent">
+
+				<Button
+					android:id="@+id/btn_save_rate"
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:text="SAVE" />
+
+			</LinearLayout>
+		</LinearLayout>
+	</RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

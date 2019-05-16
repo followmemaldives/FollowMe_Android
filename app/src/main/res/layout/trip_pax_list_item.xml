@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dip"
+    android:descendantFocusability="blocksDescendants">
+ 
+    <!--  ListRow Left sied Thumbnail image -->
+    <LinearLayout android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dip">
+                
+        <ProgressBar
+            android:id="@+id/progres_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="40dip"
+            android:layout_height="40dip"/>
+ 
+    </LinearLayout>
+ 
+    <!-- Title Of Song-->
+    <TextView
+        android:id="@+id/pax_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="Vessel Name"
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:textSize="15dip"
+        android:textStyle="bold"/>
+ 
+    <!-- Artist Name -->
+    <TextView
+        android:id="@+id/route_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pax_name"
+        android:textColor="#343434"
+        android:textSize="12dip"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="Owner..." />
+ 
+ 
+     <!-- Rightend Arrow -->
+
+        <ImageView
+                android:id="@+id/item_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_overflow"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+
+
+
+
+    <LinearLayout
+            android:id="@+id/layout_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/route_name"
+            android:layout_toRightOf="@+id/thumbnail"
+            android:orientation="horizontal" >
+
+
+        <LinearLayout
+                android:id="@+id/contact_box"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="5dp"
+                android:padding="3dp"
+                android:background="@drawable/border_10dp"
+                android:layout_height="20dp">
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_local_phone_gray_18dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="fill"
+                    android:layout_centerVertical="true"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/contact_number"
+                    android:layout_gravity="fill"
+                    android:textSize="10dip"
+                    android:paddingRight="5dp"
+                    android:text="35"/>
+
+        </LinearLayout>
+        <LinearLayout
+                android:id="@+id/booking_status_box"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:padding="3dp"
+                android:background="@drawable/border_10dp"
+                android:layout_height="20dp">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/booking_status"
+                    android:layout_gravity="fill"
+                    android:textSize="10sp"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp"
+                    android:text=""/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

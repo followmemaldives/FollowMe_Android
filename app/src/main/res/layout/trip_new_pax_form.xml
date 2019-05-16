@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	tools:context="com.asif.followme.ShareFormActivity">
+
+
+    <TextView
+            android:id="@+id/error_label"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Loading, Please wait...."
+            android:padding="15dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/body_layout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="15dp"
+		android:layout_marginRight="15dp"
+        android:visibility="gone"
+		android:orientation="vertical">
+
+
+		<TextView
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:text="From"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+		<Spinner
+				android:id="@+id/from_spinner"
+				style="@style/mySpinnerStyle"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"/>
+		<TextView
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:text="To"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+		<Spinner
+				android:id="@+id/to_spinner"
+				style="@style/mySpinnerStyle"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"/>
+		<LinearLayout
+			android:id="@+id/pax_multiple_layout"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:visibility="gone">
+			<TextView
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:text="Passenger List"
+				android:layout_marginTop="10dp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+			</TextView>
+			<EditText
+				android:id="@+id/pax_input_multiple"
+				android:inputType="textMultiLine"
+				android:lines="5"
+				android:minLines="5"
+				android:gravity="top|left"
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:scrollbars="vertical"
+				style="@style/App_EditTextStyle"/>
+		</LinearLayout>
+		<LinearLayout
+				android:id="@+id/pax_single_layout"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+			<TextView
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:text="Passenger Name"
+					android:layout_marginTop="10dp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content">
+			</TextView>
+			<EditText
+					android:id="@+id/pax_input_single"
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					style="@style/App_EditTextStyle"/>
+		</LinearLayout>
+		<TextView
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:text="Contact"
+				android:layout_marginTop="10dp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+		</TextView>
+		<EditText
+				android:id="@+id/contact_input"
+				style="@style/App_EditTextStyle"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:inputType="phone"
+				android:padding="8dp" >
+		</EditText>
+		<TextView
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:text="Status"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+		<Spinner
+				android:id="@+id/booking_status_spinner"
+				style="@style/mySpinnerStyle"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"/>
+
+
+		<LinearLayout
+			android:layout_height="50dp"
+			android:weightSum="1"
+			android:id="@+id/linearLayout13"
+			android:layout_marginBottom="20dp"
+			android:layout_marginTop="10dp"
+			android:layout_width="match_parent">
+
+			<Button
+				android:id="@+id/addButton"
+				android:layout_height="wrap_content"
+				android:layout_weight=".5"
+				android:layout_width="0dip"
+				android:layout_toLeftOf="@+id/cancelButton"
+				android:text="Add" />
+
+			<Button
+				android:id="@+id/cancelButton"
+				android:layout_height="wrap_content"
+				android:layout_weight=".5"
+				android:layout_width="0dip"
+				android:layout_alignParentRight="true"
+				android:text="Cancel" />
+
+		</LinearLayout>
+	</LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_new_plan"
+        android:orderInCategory="100"
+        android:title="New Trip"
+        android:icon="@drawable/baseline_add_white_48dp"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_calendar_trip"
+        android:orderInCategory="100"
+        android:title="New Hire"
+        android:icon="@drawable/ic_action_go_to_today"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_filter"
+        android:orderInCategory="100"
+        android:title="Trip Filter"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_template"
+        android:orderInCategory="100"
+        android:title="Route Templates"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_help"
+        android:orderInCategory="100"
+        android:title="Help"
+        app:showAsAction="never" />
+
+
+</menu>

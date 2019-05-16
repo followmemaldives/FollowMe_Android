@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	tools:context="com.asif.followme.ShareFormActivity">
+
+
+	<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="15dp"
+			android:layout_marginRight="15dp"
+			android:orientation="vertical">
+
+		<TextView
+				android:id="@+id/package_label"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:text="Date Options"
+				android:layout_marginTop="10dp"
+				android:layout_width="wrap_content"
+				android:clickable="true"
+				android:focusable="true"
+				android:focusableInTouchMode="true"
+				android:layout_height="wrap_content">
+		</TextView>
+		<Spinner
+				android:id="@+id/filter_spinner"
+				style="@style/mySpinnerStyle"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:entries="@array/log_filter_array"
+				android:padding="8dp"/>
+	<LinearLayout
+			android:id="@+id/custom_date_layout"
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="vertical"
+			android:visibility="gone">
+		<LinearLayout
+				android:layout_height="wrap_content"
+				android:weightSum="1"
+				android:layout_width="match_parent">
+			<TextView
+					android:id="@+id/date_picker_label1"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:text="FROM"
+					android:layout_weight=".5"
+					android:layout_width="0dip"
+					android:focusable="true"
+					android:focusableInTouchMode="true"
+					android:layout_height="wrap_content">
+			</TextView>
+			<TextView
+					android:id="@+id/date_picker_label2"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:text="TO"
+					android:layout_marginLeft="10dp"
+					android:layout_weight=".5"
+					android:layout_width="0dip"
+					android:focusable="true"
+					android:focusableInTouchMode="true"
+					android:layout_height="wrap_content">
+			</TextView>
+		</LinearLayout>
+		<LinearLayout
+				android:layout_height="wrap_content"
+				android:weightSum="1"
+				android:layout_width="match_parent">
+			<TextView
+					android:id="@+id/date_picker1"
+					android:layout_height="wrap_content"
+					android:layout_weight=".5"
+					android:layout_width="0dip"
+					android:clickable="true"
+					android:focusable="false"
+					android:onClick="showDatePicker1"
+					android:tag="date1"
+					style="@style/App_EditTextStyle">
+			</TextView>
+			<TextView
+					android:id="@+id/date_picker2"
+					android:layout_height="wrap_content"
+					android:layout_weight=".5"
+					android:layout_width="0dip"
+					android:layout_marginLeft="10dp"
+					android:clickable="true"
+					android:focusable="false"
+					android:onClick="showDatePicker2"
+					android:tag="date2"
+					style="@style/App_EditTextStyle">
+			</TextView>
+		</LinearLayout>
+	</LinearLayout>
+
+		<LinearLayout
+				android:id="@+id/sort_option_layout"
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:orientation="vertical"
+				android:visibility="gone">
+			<TextView
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:text="Order By"
+					android:layout_marginTop="10dp"
+					android:layout_width="wrap_content"
+					android:clickable="true"
+					android:focusable="true"
+					android:focusableInTouchMode="true"
+					android:layout_height="wrap_content">
+			</TextView>
+			<Spinner
+					android:id="@+id/order_spinner"
+					style="@style/mySpinnerStyle"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:entries="@array/log_order_array"
+					android:padding="8dp"/>
+		</LinearLayout>
+
+
+		<LinearLayout
+			android:layout_height="50dp"
+			android:weightSum="1"
+			android:id="@+id/linearLayout13"
+			android:layout_marginBottom="20dp"
+			android:layout_marginTop="10dp"
+			android:layout_width="match_parent">
+
+			<Button
+				android:id="@+id/log_filter_btn"
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:layout_toLeftOf="@+id/cancelButton"
+				android:text="Show Logs" />
+
+
+		</LinearLayout>
+	</LinearLayout>
+</android.support.constraint.ConstraintLayout>

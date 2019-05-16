@@ -1,0 +1,12 @@
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/new_group_device"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_action_add_person_white"
+        android:title="Add New Device"
+        app:showAsAction="always" />
+
+
+</menu>

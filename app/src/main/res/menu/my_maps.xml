@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/tool_trace"
+        android:orderInCategory="100"
+        android:title="Trace Route"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/tool_logs"
+        android:orderInCategory="100"
+        android:title="Trip &amp; Alarm Logs"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/tool_guard_logs"
+        android:orderInCategory="100"
+        android:title="Security Logs"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/tool_neighbours"
+        android:orderInCategory="100"
+        android:title="Show Neighbours"
+        app:showAsAction="never" />
+</menu>

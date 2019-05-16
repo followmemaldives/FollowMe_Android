@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:follow="http://schemas.android.com/tools">
+    <item android:id="@+id/action_search"
+        app:showAsAction="always|collapseActionView"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        android:orderInCategory="1"
+        android:visible="false"
+        android:imeOptions="actionSearch"
+        android:title="" />
+    <item
+        android:id="@+id/action_atolls"
+        android:title="Atolls"
+        android:orderInCategory="2"
+        android:visible="false"
+        app:showAsAction="always|withText">
+        <menu>
+            <item
+                android:id="@+id/atoll_all"
+                android:title="All"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/atoll_ha"
+                android:title="Haa Alif"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/atoll_hd"
+                android:title="Haa Dhaal"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/atoll_sh"
+                android:title="Shaviyani"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/atoll_n"
+                android:title="Noon"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/atoll_r"
+                android:title="Raa"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/atoll_b"
+                android:title="Baa"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/atoll_lh"
+                android:title="Lhaviyani"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/atoll_k"
+                android:title="Kaafu"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/atoll_aa"
+                android:title="Alif Alif"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/atoll_ad"
+                android:title="Alif Dhaal"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/atoll_v"
+                android:title="Vaavu"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/atoll_m"
+                android:title="Meemu"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/atoll_f"
+                android:title="Faafu"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/atoll_d"
+                android:title="Dhaal"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/atoll_t"
+                android:title="Thaa"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/atoll_l"
+                android:title="Laamu"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/atoll_ga"
+                android:title="Gaafu Alif"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/atoll_gd"
+                android:title="Gaafu Dhaal"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/atoll_gn"
+                android:title="Fvahmulah"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/atoll_s"
+                android:title="Seenu"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/atoll_male"
+                android:title="Male City"
+                app:showAsAction="never"/>
+        </menu>
+    </item>
+
+</menu>

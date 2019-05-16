@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto"
+      tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_my_vessels"
+            android:icon="@drawable/ic_directions_boat_black_24dp"
+            android:title="My Devices" />
+        <item
+            android:id="@+id/nav_my_groups"
+            android:icon="@drawable/boat_collections_black_48dp"
+            android:title="My Groups" />
+    </group>
+
+    <group
+        android:id="@+id/group_trip_plan"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_trip_plan"
+            android:icon="@drawable/boat_schedule_black_48dp"
+            android:title="Trip Plans" />
+    </group>
+    <group
+        android:id="@+id/menu_group_hire"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_boat_hire"
+            android:icon="@drawable/boat_hire_black_36dp_3"
+            app:actionLayout="@layout/hire_counter"
+            android:title="Boat Hire Requests" />
+    </group>
+    <group
+        android:id="@+id/menu_group_wallet"
+        android:checkableBehavior="single">
+        <item
+                android:id="@+id/nav_my_wallet"
+                android:icon="@drawable/reload_black_36dp"
+                android:title="Prepaid Reload" />
+    </group>
+
+    <group
+        android:id="@+id/menu_bottom"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="Settings" />
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/ic_help_outline_black_24dp"
+            android:title="Help" />
+        <item
+            android:id="@+id/nav_buy"
+            android:icon="@drawable/baseline_router_black_36dp"
+            android:title="Buy Tracking Device" />
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_menu_share"
+            android:title="Recommend to a friend" />
+        <item
+            android:id="@+id/nav_signout"
+            android:icon="@drawable/sign_out"
+            android:title="Sign Out" />
+    </group>
+
+
+</menu>

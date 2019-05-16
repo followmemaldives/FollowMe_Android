@@ -1,0 +1,22 @@
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_new_pax"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_action_add_person_white"
+        android:title="New Share"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_filter_clear"
+        android:orderInCategory="100"
+        android:title="Show All"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_filter_dest"
+        android:orderInCategory="100"
+        android:title="Filter by Leg"
+        app:showAsAction="never" />
+
+
+</menu>

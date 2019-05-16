@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.asif.followme.LogsActivity">
+    <item
+        android:id="@+id/action_share_text"
+        android:orderInCategory="100"
+        android:title="Share Logs as Text"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_share_image"
+        android:orderInCategory="100"
+        android:title="Share Logs as Image"
+        app:showAsAction="never" />
+</menu>

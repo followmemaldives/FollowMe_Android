@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Preferences">
+        <ListPreference
+            android:defaultValue="gb"
+            android:dialogTitle="@string/title_country"
+            android:entries="@array/country_names"
+            android:entryValues="@array/country_values"
+            android:key="@string/title_key_country"
+            android:summary="@string/title_summary_country"
+            android:title="@string/title_country" />
+
+
+
+        <PreferenceScreen
+            android:defaultValue="Notifications"
+            android:key="notification_screen"
+            android:title="Notifications"
+            android:summary="Set Notification Settings">
+
+            <SwitchPreference
+                android:defaultValue="false"
+                android:key="move_alert"
+                android:title="Movement Notifiction"
+                android:summary="Arrival and Departure Notifications"/>
+
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:dependency="move_alert"
+                android:key="move_sound"
+                android:title="      Sound" />
+
+
+
+            <SwitchPreference
+                android:defaultValue="false"
+                android:paddingStart="20dp"
+                android:key="minor_alert"
+                android:title="Minor Alarms"
+                android:summary="Device Alarms"/>
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:dependency="minor_alert"
+                android:key="minor_sound"
+                android:title="      Sound" />
+
+
+            <SwitchPreference
+                android:defaultValue="false"
+                android:key="major_alert"
+                android:title="Major Alarms"
+                android:summary="SOS / HELP ME Notification"/>
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:dependency="major_alert"
+                android:key="major_sound"
+                android:title="      Sound" />
+            <PreferenceCategory
+                    android:key="category_hire"
+                    android:title="Boat Hire">
+            <SwitchPreference
+                    android:defaultValue="false"
+                    android:key="hire_alert"
+                    android:title="Boat Hire Notifications"
+                    android:summary="Boat Hire &amp; Bid Status"/>
+            <CheckBoxPreference
+                    android:defaultValue="false"
+                    android:dependency="hire_alert"
+                    android:key="hire_sound"
+                    android:title="      Sound" />
+            </PreferenceCategory>
+        </PreferenceScreen>
+    </PreferenceCategory>
+
+</PreferenceScreen>

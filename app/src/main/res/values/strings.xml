@@ -1,0 +1,932 @@
+<resources>
+    <string name="app_name">FollowMe</string>
+    <string name="title_activity_public">PublicActivity</string>
+
+    <string name="app_label">Follow..</string>
+    <string name="search_hint">Search...</string>
+
+    <string name="channel_name">com.asif.followme_notification_channel</string>
+    <string name="channel_description">FollowMe Tracking Service</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_public_settings">Public Preferences</string>
+    <string name="action_bell">Notifications</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+
+
+    <string name="select">Choose Your Country</string>
+    <string-array name="country_names">
+        <item>Afghanistan</item>
+        <item>Albania</item>
+        <item>Algeria</item>
+        <item>American Samoa</item>
+        <item>Andorra</item>
+        <item>Angola</item>
+        <item>Anguilla</item>
+        <item>Antigua and Barbuda</item>
+        <item>Argentina</item>
+        <item>Armenia</item>
+        <item>Aruba</item>
+        <item>Australia</item>
+        <item>Austria</item>
+        <item>Azerbaijan</item>
+        <item>Bahrain</item>
+        <item>Bangladesh</item>
+        <item>Barbados</item>
+        <item>Belarus</item>
+        <item>Belgium</item>
+        <item>Belize</item>
+        <item>Benin</item>
+        <item>Bermuda</item>
+        <item>Bhutan</item>
+        <item>Bolivia</item>
+        <item>Bosnia and Herzegovina</item>
+        <item>Botswana</item>
+        <item>Brazil</item>
+        <item>British Virgin Islands</item>
+        <item>Brunei</item>
+        <item>Bulgaria</item>
+        <item>Burkina Faso</item>
+        <item>Burundi</item>
+        <item>Cambodia</item>
+        <item>Cameroon</item>
+        <item>Canada</item>
+        <item>Cape Verde</item>
+        <item>Cayman Islands</item>
+        <item>Central African Republic</item>
+        <item>Chad</item>
+        <item>Chile</item>
+        <item>China</item>
+        <item>Colombia</item>
+        <item>Comoros</item>
+        <item>Congo</item>
+        <item>Cook Islands</item>
+        <item>Costa Rica</item>
+        <item>Croatia</item>
+        <item>Cuba</item>
+        <item>Cyprus</item>
+        <item>Czech Republic</item>
+        <item>Denmark</item>
+        <item>Djibouti</item>
+        <item>Dominica</item>
+        <item>Dominican Republic</item>
+        <item>East Timor</item>
+        <item>Ecuador</item>
+        <item>Egypt</item>
+        <item>El Salvador</item>
+        <item>Equatorial Guinea</item>
+        <item>Eritrea</item>
+        <item>Estonia</item>
+        <item>Ethiopia</item>
+        <item>Faeroe Islands</item>
+        <item>Falkland Islands</item>
+        <item>Fiji</item>
+        <item>Finland</item>
+        <item>France</item>
+        <item>French Guiana</item>
+        <item>French Polynesia</item>
+        <item>French Southern Territories</item>
+        <item>Gabon</item>
+        <item>Georgia</item>
+        <item>Germany</item>
+        <item>Ghana</item>
+        <item>Gibraltar</item>
+        <item>Greece</item>
+        <item>Greenland</item>
+        <item>Grenada</item>
+        <item>Guadeloupe</item>
+        <item>Guam</item>
+        <item>Guatemala</item>
+        <item>Guinea</item>
+        <item>Guinea-Bissau</item>
+        <item>Guyana</item>
+        <item>Haiti</item>
+        <item>Heard Island and McDonald Islands</item>
+        <item>Honduras</item>
+        <item>Hong Kong</item>
+        <item>Hungary</item>
+        <item>Iceland</item>
+        <item>India</item>
+        <item>Indonesia</item>
+        <item>Iran</item>
+        <item>Iraq</item>
+        <item>Ireland</item>
+        <item>Israel</item>
+        <item>Italy</item>
+        <item>Jamaica</item>
+        <item>Japan</item>
+        <item>Jordan</item>
+        <item>Kazakhstan</item>
+        <item>Kenya</item>
+        <item>Kiribati</item>
+        <item>Kuwait</item>
+        <item>Kyrgyzstan</item>
+        <item>Laos</item>
+        <item>Latvia</item>
+        <item>Lebanon</item>
+        <item>Lesotho</item>
+        <item>Liberia</item>
+        <item>Libya</item>
+        <item>Liechtenstein</item>
+        <item>Lithuania</item>
+        <item>Luxembourg</item>
+        <item>Macau</item>
+        <item>Macedonia</item>
+        <item>Madagascar</item>
+        <item>Malawi</item>
+        <item>Malaysia</item>
+        <item>Maldives</item>
+        <item>Mali</item>
+        <item>Malta</item>
+        <item>Marshall Islands</item>
+        <item>Martinique</item>
+        <item>Mauritania</item>
+        <item>Mauritius</item>
+        <item>Mayotte</item>
+        <item>Mexico</item>
+        <item>Micronesia</item>
+        <item>Moldova</item>
+        <item>Monaco</item>
+        <item>Mongolia</item>
+        <item>Montenegro</item>
+        <item>Montserrat</item>
+        <item>Morocco</item>
+        <item>Mozambique</item>
+        <item>Myanmar</item>
+        <item>Namibia</item>
+        <item>Nauru</item>
+        <item>Nepal</item>
+        <item>Netherlands</item>
+        <item>Netherlands Antilles</item>
+        <item>New Caledonia</item>
+        <item>New Zealand</item>
+        <item>Nicaragua</item>
+        <item>Niger</item>
+        <item>Nigeria</item>
+        <item>Niue</item>
+        <item>Norfolk Island</item>
+        <item>North Korea</item>
+        <item>Northern Marianas</item>
+        <item>Norway</item>
+        <item>Oman</item>
+        <item>Pakistan</item>
+        <item>Palau</item>
+        <item>Palestine</item>
+        <item>Panama</item>
+        <item>Papua New Guinea</item>
+        <item>Paraguay</item>
+        <item>Peru</item>
+        <item>Philippines</item>
+        <item>Pitcairn Islands</item>
+        <item>Poland</item>
+        <item>Portugal</item>
+        <item>Puerto Rico</item>
+        <item>Qatar</item>
+        <item>Reunion</item>
+        <item>Romania</item>
+        <item>Russia</item>
+        <item>Rwanda</item>
+        <item>Saint Helena</item>
+        <item>Saint Kitts and Nevis</item>
+        <item>Saint Lucia</item>
+        <item>Saint Pierre and Miquelon</item>
+        <item>Saint Vincent and the Grenadines</item>
+        <item>Samoa</item>
+        <item>San Marino</item>
+        <item>Saudi Arabia</item>
+        <item>Senegal</item>
+        <item>Serbia</item>
+        <item>Seychelles</item>
+        <item>Sierra Leone</item>
+        <item>Singapore</item>
+        <item>Slovakia</item>
+        <item>Slovenia</item>
+        <item>Solomon Islands</item>
+        <item>Somalia</item>
+        <item>South Africa</item>
+        <item>South Georgia and the South Sandwich Islands</item>
+        <item>South Korea</item>
+        <item>South Sudan</item>
+        <item>Spain</item>
+        <item>Sri Lanka</item>
+        <item>Sudan</item>
+        <item>Suriname</item>
+        <item>Svalbard and Jan Mayen</item>
+        <item>Swaziland</item>
+        <item>Sweden</item>
+        <item>Switzerland</item>
+        <item>Syria</item>
+        <item>Taiwan</item>
+        <item>Tajikistan</item>
+        <item>Tanzania</item>
+        <item>Thailand</item>
+        <item>Togo</item>
+        <item>Tokelau</item>
+        <item>Tonga</item>
+        <item>Trinidad and Tobago</item>
+        <item>Tunisia</item>
+        <item>Turkey</item>
+        <item>Turkmenistan</item>
+        <item>Turks and Caicos Islands</item>
+        <item>Tuvalu</item>
+        <item>Uganda</item>
+        <item>Ukraine</item>
+        <item>United Arab Emirates</item>
+        <item>United Kingdom</item>
+        <item>United States</item>
+        <item>Uruguay</item>
+        <item>Uzbekistan</item>
+        <item>Vanuatu</item>
+        <item>Vatican City</item>
+        <item>Venezuela</item>
+        <item>Vietnam</item>
+        <item>Virgin Islands</item>
+        <item>Wallis and Futuna</item>
+        <item>Western Sahara</item>
+        <item>Yemen</item>
+        <item>Yugoslavia</item>
+        <item>Zambia</item>
+        <item>Zimbabwe</item>
+    </string-array>
+
+    <string-array name="country_values">
+        <item>af</item>
+        <item>al</item>
+        <item>dz</item>
+        <item>as</item>
+        <item>ad</item>
+        <item>ao</item>
+        <item>ai</item>
+        <item>ag</item>
+        <item>ar</item>
+        <item>am</item>
+        <item>aw</item>
+        <item>au</item>
+        <item>at</item>
+        <item>az</item>
+        <item>bh</item>
+        <item>bd</item>
+        <item>bb</item>
+        <item>by</item>
+        <item>be</item>
+        <item>bz</item>
+        <item>bj</item>
+        <item>bm</item>
+        <item>bt</item>
+        <item>bo</item>
+        <item>ba</item>
+        <item>bw</item>
+        <item>br</item>
+        <item>vg</item>
+        <item>bn</item>
+        <item>bg</item>
+        <item>bf</item>
+        <item>bi</item>
+        <item>kh</item>
+        <item>cm</item>
+        <item>ca</item>
+        <item>cv</item>
+        <item>ky</item>
+        <item>cf</item>
+        <item>td</item>
+        <item>cl</item>
+        <item>cn</item>
+        <item>co</item>
+        <item>km</item>
+        <item>cg</item>
+        <item>ck</item>
+        <item>cr</item>
+        <item>hr</item>
+        <item>cu</item>
+        <item>cy</item>
+        <item>cz</item>
+        <item>dk</item>
+        <item>dj</item>
+        <item>dm</item>
+        <item>do</item>
+        <item>tl</item>
+        <item>ec</item>
+        <item>eg</item>
+        <item>sv</item>
+        <item>gq</item>
+        <item>er</item>
+        <item>ee</item>
+        <item>et</item>
+        <item>fo</item>
+        <item>fk</item>
+        <item>fj</item>
+        <item>fi</item>
+        <item>fr</item>
+        <item>gf</item>
+        <item>pf</item>
+        <item>tf</item>
+        <item>ga</item>
+        <item>ge</item>
+        <item>de</item>
+        <item>gh</item>
+        <item>gi</item>
+        <item>gr</item>
+        <item>gl</item>
+        <item>gd</item>
+        <item>gp</item>
+        <item>gu</item>
+        <item>gt</item>
+        <item>gn</item>
+        <item>gw</item>
+        <item>gy</item>
+        <item>ht</item>
+        <item>hm</item>
+        <item>hn</item>
+        <item>hk</item>
+        <item>hu</item>
+        <item>is</item>
+        <item>in</item>
+        <item>id</item>
+        <item>ir</item>
+        <item>iq</item>
+        <item>ie</item>
+        <item>il</item>
+        <item>it</item>
+        <item>jm</item>
+        <item>jp</item>
+        <item>jo</item>
+        <item>kz</item>
+        <item>ke</item>
+        <item>ki</item>
+        <item>kw</item>
+        <item>kg</item>
+        <item>la</item>
+        <item>lv</item>
+        <item>lb</item>
+        <item>ls</item>
+        <item>lr</item>
+        <item>ly</item>
+        <item>li</item>
+        <item>lt</item>
+        <item>lu</item>
+        <item>mo</item>
+        <item>mk</item>
+        <item>mg</item>
+        <item>mw</item>
+        <item>my</item>
+        <item>mv</item>
+        <item>ml</item>
+        <item>mt</item>
+        <item>mh</item>
+        <item>mq</item>
+        <item>mr</item>
+        <item>mu</item>
+        <item>yt</item>
+        <item>mx</item>
+        <item>fm</item>
+        <item>md</item>
+        <item>mc</item>
+        <item>mn</item>
+        <item>me</item>
+        <item>ms</item>
+        <item>ma</item>
+        <item>mz</item>
+        <item>mm</item>
+        <item>na</item>
+        <item>nr</item>
+        <item>np</item>
+        <item>nl</item>
+        <item>an</item>
+        <item>nc</item>
+        <item>nz</item>
+        <item>ni</item>
+        <item>ne</item>
+        <item>ng</item>
+        <item>nu</item>
+        <item>nf</item>
+        <item>kp</item>
+        <item>mp</item>
+        <item>no</item>
+        <item>om</item>
+        <item>pk</item>
+        <item>pw</item>
+        <item>ps</item>
+        <item>pa</item>
+        <item>pg</item>
+        <item>py</item>
+        <item>pe</item>
+        <item>ph</item>
+        <item>pn</item>
+        <item>pl</item>
+        <item>pt</item>
+        <item>pr</item>
+        <item>qa</item>
+        <item>re</item>
+        <item>ro</item>
+        <item>ru</item>
+        <item>rw</item>
+        <item>sh</item>
+        <item>kn</item>
+        <item>lc</item>
+        <item>pm</item>
+        <item>vc</item>
+        <item>ws</item>
+        <item>sm</item>
+        <item>sa</item>
+        <item>sn</item>
+        <item>rs</item>
+        <item>sc</item>
+        <item>sl</item>
+        <item>sg</item>
+        <item>sk</item>
+        <item>si</item>
+        <item>sb</item>
+        <item>so</item>
+        <item>za</item>
+        <item>gs</item>
+        <item>kr</item>
+        <item>ss</item>
+        <item>es</item>
+        <item>lk</item>
+        <item>sd</item>
+        <item>sr</item>
+        <item>sj</item>
+        <item>sz</item>
+        <item>se</item>
+        <item>ch</item>
+        <item>sy</item>
+        <item>tw</item>
+        <item>tj</item>
+        <item>tz</item>
+        <item>th</item>
+        <item>tg</item>
+        <item>tk</item>
+        <item>to</item>
+        <item>tt</item>
+        <item>tn</item>
+        <item>tr</item>
+        <item>tm</item>
+        <item>tc</item>
+        <item>tv</item>
+        <item>ug</item>
+        <item>ua</item>
+        <item>ae</item>
+        <item>gb</item>
+        <item>us</item>
+        <item>uy</item>
+        <item>uz</item>
+        <item>vu</item>
+        <item>ve</item>
+        <item>vn</item>
+        <item>vi</item>
+        <item>wf</item>
+        <item>eh</item>
+        <item>ye</item>
+        <item>yu</item>
+        <item>zm</item>
+        <item>zw</item>
+    </string-array>
+
+    <string-array name="map_names">
+        <item>NORMAL</item>
+        <item>SATELLITE</item>
+        <item>TERRAIN</item>
+        <item>HYBRID</item>
+    </string-array>
+
+    <string-array name="map_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="atoll_list">
+        <item>ALL</item>
+        <item>Haa Alif</item>
+        <item>Haa Dhaal</item>
+        <item>Shaviyani</item>
+        <item>Noon</item>
+        <item>Raa</item>
+        <item>Baa</item>
+        <item>Lhaviyani</item>
+        <item>Kaafu</item>
+        <item>Alif Alif</item>
+        <item>Alif Dhaal</item>
+        <item>Vaavu</item>
+        <item>Meemu</item>
+        <item>Faafu</item>
+        <item>Dhaalu</item>
+        <item>Thaa</item>
+        <item>Laamu</item>
+        <item>Gaafu Alif</item>
+        <item>Gaafu Dhaal</item>
+        <item>Fuvahmulah</item>
+        <item>Seenu</item>
+        <item>Male City</item>
+    </string-array>
+
+    <string-array name="atoll_values">
+        <item></item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+    </string-array>
+
+    <string name="title_country">Select Country</string>
+    //
+    <string name="title_key_country">key_country</string>
+    <string name="title_summary_country">Specify your country for listing</string>
+
+    <string name="title_map">Map Type</string>
+    <string name="title_key_map">Map Type</string>
+    <string name="title_summary_map">Choose preferred map</string>
+
+    <string name="title_wifi">Map Type</string>
+    <string name="title_key_wifi">Map Type</string>
+    <string name="title_summary_wifi">Choose preferred map</string>
+
+    <string name="title_activity_public_maps">Public List</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_my">My Account</string>
+
+    <string-array name="my_menu_items">
+        <item>Edit Device</item>
+        <item>Share &amp; Permissions</item>
+        <item>Trip &amp; Alarm Logs</item>
+        <item>Remove from My Account</item>
+        <item>Delete Device</item>
+        <item>Public Notice</item>
+        <item>Device Information</item>
+    </string-array>
+
+    <string-array name="my_menu_ids">
+        <item>"edit"</item>
+        <item>"share"</item>
+        <item>"logs"</item>
+        <item>"remove"</item>
+        <item>"delete"</item>
+        <item>"notice"</item>
+        <item>"info"</item>
+    </string-array>
+
+    <string-array name="my_menu_icons">
+        <item>@drawable/ic_action_edit</item>
+        <item>@drawable/ic_action_add_person</item>
+        <item>@drawable/baseline_notes</item>
+        <item>@drawable/ic_action_remove</item>
+        <item>@drawable/ic_action_about</item>
+        <item>@drawable/ic_action_chat</item>
+        <item>@drawable/ic_action_labels</item>
+    </string-array>
+    <string name="device_brand_title">Choose Your Device</string>
+    <string-array name="device_brand_array">
+        <item>Mobile Phone</item>
+        <item>FollowMe Tracking Device</item>
+    </string-array>
+    <string-array name="device_type_array">
+        <item> </item>
+    </string-array>
+    <string name="title_activity_my_maps">MyMapsActivity</string>
+    <string name="title_activity_trip_log">TripLogActivity</string>
+    <string name="title_activity_logs">LogsActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <string-array name="my_group_menu_items">
+        <item>Add/Remove Device</item>
+        <item>Rename Group</item>
+        <item>Delete Group</item>
+    </string-array>
+    <string-array name="my_group_menu_ids">
+        <item>"group_devices"</item>
+        <item>"group_rename"</item>
+        <item>"group_delete"</item>
+    </string-array>
+    <string-array name="my_group_menu_icons">
+        <item>@drawable/ic_action_add_person</item>
+        <item>@drawable/ic_action_edit</item>
+        <item>@drawable/ic_action_remove</item>
+    </string-array>
+
+    <string-array name="public_menu_items">
+        <item>Share</item>
+        <item>Alert Me</item>
+    </string-array>
+
+    <string-array name="public_menu_ids">
+        <item>"share"</item>
+        <item>"alert_me"</item>
+
+    </string-array>
+
+    <string-array name="public_menu_icons">
+        <item>@drawable/ic_action_share</item>
+        <item>@drawable/ic_action_notifications_none</item>
+    </string-array>
+
+
+    <string-array name="my_trip_menu_items">
+        <item>Edit Trip Plan</item>
+        <item>Delete Trip Plan</item>
+    </string-array>
+    <string-array name="my_trip_menu_ids">
+        <item>"trip_edit"</item>
+        <item>"trip_delete"</item>
+    </string-array>
+    <string-array name="my_trip_menu_icons">
+        <item>@drawable/ic_action_edit</item>
+        <item>@drawable/ic_action_remove</item>
+    </string-array>
+    <string-array name="trip_status_array">
+        <item>Draft</item>
+        <item>Planned</item>
+        <item>Confirmed</item>
+    </string-array>
+    <string-array name="hire_status_array">
+        <item>Draft - (Visible only to you)</item>
+        <item>Publish - (Visible to public)</item>
+    </string-array>
+    <string-array name="hire_visibility_array">
+        <item>All Boat Operators</item>
+        <item>Selected Boat Operators Only</item>
+    </string-array>
+
+    <string-array name="my_boat_hire_menu_items_1">
+        <item>Publish</item>
+        <item>Edit</item>
+        <item>Delete</item>
+    </string-array>
+    <string-array name="my_boat_hire_menu_ids_1">
+        <item>"publish"</item>
+        <item>"edit"</item>
+        <item>"delete"</item>
+    </string-array>
+    <string-array name="my_boat_hire_menu_icons_1">
+        <item>@drawable/baseline_cloud_upload_gray_48dp</item>
+        <item>@drawable/ic_action_edit</item>
+        <item>@drawable/ic_action_remove</item>
+    </string-array>
+
+    <!--Published and no bids yet -->
+    <string-array name="my_boat_hire_menu_items_20">
+        <item>Unpublish</item>
+    </string-array>
+    <string-array name="my_boat_hire_menu_ids_20">
+        <item>"unpublish"</item>
+    </string-array>
+    <string-array name="my_boat_hire_menu_icons_20">
+        <item>@drawable/ic_action_remove</item>
+    </string-array>
+
+    <!--Published but started bidding  -->
+    <string-array name="my_boat_hire_menu_items_21">
+        <item>Cancel Bid</item>
+    </string-array>
+    <string-array name="my_boat_hire_menu_ids_21">
+        <item>"cancel"</item>
+    </string-array>
+    <string-array name="my_boat_hire_menu_icons_21">
+        <item>@drawable/ic_action_remove</item>
+    </string-array>
+
+    <!--Published, bids and confirmed   -->
+    <string-array name="my_boat_hire_menu_items_23">
+        <item>Mark Completed</item>
+        <item>Cancel Bid</item>
+    </string-array>
+    <string-array name="my_boat_hire_menu_ids_23">
+        <item>"completed"</item>
+        <item>"cancel"</item>
+    </string-array>
+    <string-array name="my_boat_hire_menu_icons_23">
+        <item>@drawable/done_grey_36dp</item>
+        <item>@drawable/ic_action_remove</item>
+    </string-array>
+
+    <!--Awarded Boats  -->
+    <string-array name="boat_hire_award_items">
+        <item>Trip Completed/Feedback</item>
+    </string-array>
+    <string-array name="boat_hire_award_ids">
+        <item>"finish"</item>
+    </string-array>
+    <string-array name="boat_hire_award_icons">
+        <item>@drawable/baseline_done_black_36dp</item>
+    </string-array>
+    <string-array name="destination_choose_method_array">
+        <item>Auto Detect Destination</item>
+        <item>Manually Select Destination</item>
+    </string-array>
+    <string-array name="charter_types_array">
+        <item>Destination Based</item>
+        <item>Hourly Charter</item>
+        <item>Daily Charter</item>
+        <item>Monthly Charter</item>
+    </string-array>
+    <string-array name="hour_selection_array">
+        <item>1-2 Hours</item>
+        <item>3-5 Hours</item>
+        <item>6 Hours or More</item>
+    </string-array>
+    <string-array name="hour_values_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="day_selection_array">
+        <item>1-2 Days</item>
+        <item>3-5 Days</item>
+        <item>6 Days or More</item>
+    </string-array>
+    <string-array name="day_values_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="month_selection_array">
+        <item>1-2 Months</item>
+        <item>3-5 Months</item>
+        <item>6 Months or More</item>
+    </string-array>
+    <string-array name="month_values_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="reload_options_array">
+        <item>Reload RF 10</item>
+        <item>Reload RF 30</item>
+        <item>Reload RF 50</item>
+        <item>Reload RF 70</item>
+        <item>Reload RF 90</item>
+        <item>Data Package RF 100</item>
+    </string-array>
+    <string-array name="log_filter_array">
+        <item>Today</item>
+        <item>Yesterday</item>
+        <item>Last 7 days</item>
+        <item>Last 30 days</item>
+        <item>Choose Date</item>
+    </string-array>
+    <string-array name="log_order_array">
+        <item>Date</item>
+        <item>Device > Date</item>
+    </string-array>
+
+    <string-array name="trip_plan_menu_items">
+        <item>Edit Trip</item>
+        <item>Trip Completed</item>
+        <item>Delete Plan</item>
+    </string-array>
+
+    <string-array name="trip_plan_menu_ids">
+        <item>"edit"</item>
+        <item>"completed"</item>
+        <item>"delete"</item>
+    </string-array>
+
+    <string-array name="trip_plan_menu_icons">
+        <item>@drawable/ic_action_edit</item>
+        <item>@drawable/ic_action_about</item>
+        <item>@drawable/ic_action_remove</item>
+    </string-array>
+
+    <string-array name="trip_pax_menu_items">
+        <item>Edit Booking</item>
+        <item>Cancel Booking</item>
+    </string-array>
+    <string-array name="trip_pax_menu_ids">
+        <item>"edit_booking"</item>
+        <item>"cancel_booking"</item>
+    </string-array>
+    <string-array name="trip_pax_menu_icons">
+        <item>@drawable/ic_action_edit</item>
+        <item>@drawable/ic_action_remove</item>
+    </string-array>
+    <string-array name="trip_filter_array">
+        <item>This Week</item>
+        <item>Next Week</item>
+        <item>This Month</item>
+        <item>Next Month</item>
+        <item>Choose Date</item>
+    </string-array>
+    <string-array name="trip_route_menu_items">
+        <item>Edit Route</item>
+        <item>Delete Route</item>
+    </string-array>
+    <string-array name="trip_route_menu_ids">
+        <item>"edit_route"</item>
+        <item>"del_route"</item>
+    </string-array>
+    <string-array name="trip_route_menu_icons">
+        <item>@drawable/ic_action_edit</item>
+        <item>@drawable/ic_action_remove</item>
+    </string-array>
+    <string-array name="route_status_array">
+        <item>Draft</item>
+        <item>Active</item>
+    </string-array>
+
+
+</resources>

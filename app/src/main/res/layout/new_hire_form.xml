@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".BoatHire.Public.NewHireForm">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:id="@+id/parent_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            <TextView
+                    android:id="@+id/boat_type_label"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Choose Boat Types"
+                    android:layout_width="wrap_content"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:layout_height="wrap_content"/>
+
+            <com.google.android.flexbox.FlexboxLayout
+                    android:id="@+id/layout_checkbox"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:flexWrap="wrap"
+                    app:alignItems="baseline"
+                    app:alignContent="space_around"
+                    style="@style/App_EditTextStyle">
+
+            </com.google.android.flexbox.FlexboxLayout>>
+            <TextView
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Charter Type:"/>
+            <Spinner
+                    android:id="@+id/charter_type_spinner"
+                    style="@style/mySpinnerStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:entries="@array/charter_types_array"/>
+            <LinearLayout
+                    android:id="@+id/time_based_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+                <TextView
+                        android:id="@+id/time_based_label"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Estimated Hire Duration"
+                        android:layout_width="wrap_content"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:layout_height="wrap_content"/>
+                <Spinner
+                        android:id="@+id/time_selection_spinner"
+                        style="@style/mySpinnerStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:entries="@array/hour_selection_array"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:weightSum="1"
+                    android:layout_width="match_parent">
+                <TextView
+                        android:id="@+id/date_picker_label"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Trip Date"
+                        android:layout_weight=".5"
+                        android:layout_width="0dip"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:layout_height="wrap_content">
+                </TextView>
+                <TextView
+                        android:id="@+id/time_picker_label"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Departure Time"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight=".5"
+                        android:layout_width="0dip"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:layout_height="wrap_content">
+                </TextView>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:weightSum="1"
+                    android:layout_width="match_parent">
+                <TextView
+                        android:id="@+id/date_picker"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:layout_width="0dip"
+                        android:clickable="true"
+                        android:focusable="false"
+                        android:onClick="showDatePicker"
+                        style="@style/App_EditTextStyle">
+                </TextView>
+                <TextView
+                        android:id="@+id/time_picker"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:layout_width="0dip"
+                        android:layout_marginLeft="10dp"
+                        android:clickable="true"
+                        android:focusable="false"
+                        android:onClick="showTimePicker"
+                        style="@style/App_EditTextStyle">
+                </TextView>
+            </LinearLayout>
+                <TextView
+                    android:id="@+id/webview_label"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Depature island"
+                    android:layout_width="wrap_content"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:layout_height="wrap_content"/>
+
+                    <WebView
+                        android:id="@+id/webview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="0dp"
+                        />
+            <LinearLayout
+                    android:id="@+id/destination_based_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+                <TextView
+                    android:id="@+id/webview2_label"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Destination islands in travel order"
+                    android:layout_width="wrap_content"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:layout_height="wrap_content"/>
+                <WebView
+                    android:id="@+id/webview2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="0dp"
+                />
+            </LinearLayout>
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Bid Open for"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+            <Spinner
+                android:id="@+id/hire_operator_spinner"
+                style="@style/mySpinnerStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:entries="@array/hire_visibility_array"/>
+            <LinearLayout
+                    android:id="@+id/operator_select_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    android:orientation="vertical" >
+                <TextView
+                        android:id="@+id/webview_operator_label"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Type and Select Operator"
+                        android:layout_width="wrap_content"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:layout_height="wrap_content"/>
+                <WebView
+                        android:id="@+id/webview_operator"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="0dp"
+                />
+            </LinearLayout>
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Special Instructions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/hire_remarks"
+                android:inputType="textMultiLine"
+                android:lines="3"
+                android:minLines="3"
+                android:gravity="top|left"
+                android:maxLines="5"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:scrollbars="vertical"
+                style="@style/App_EditTextStyle"
+                />
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+                <Spinner
+                    android:id="@+id/hire_status_spinner"
+                    style="@style/mySpinnerStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:entries="@array/hire_status_array"
+                    android:prompt="@string/device_brand_title"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/btn_hire_save"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Save Boat Hire"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

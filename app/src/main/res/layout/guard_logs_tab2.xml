@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="vertical"
+     tools:context="com.asif.followme.guardLogsTab2">
+    <TextView
+            android:id="@+id/header_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#343434"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:text="" />
+
+    <TextView
+        android:id="@+id/alarm_notfound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Not found"
+        android:textAppearance="?android:attr/textAppearanceSmall"/>
+    <LinearLayout
+            android:id="@+id/layout_log_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+                android:id="@+id/h0"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:textColor="#343434"
+                android:layout_marginLeft="5dp"
+                android:text="" />
+        <TextView
+                android:id="@+id/h1"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:textColor="#343434"
+                android:layout_marginLeft="20dp"
+                android:visibility="gone"
+                android:text="" />
+        <TextView
+                android:id="@+id/h2"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:textColor="#343434"
+                android:layout_marginLeft="20dp"
+                android:visibility="gone"
+                android:text="" />
+        <TextView
+                android:id="@+id/h3"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:textColor="#343434"
+                android:layout_marginLeft="20dp"
+                android:visibility="gone"
+                android:text="" />
+        <TextView
+                android:id="@+id/h4"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:textColor="#343434"
+                android:layout_marginLeft="20dp"
+                android:visibility="gone"
+                android:text=""/>
+        <TextView
+                android:id="@+id/h5"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:textColor="#343434"
+                android:layout_marginLeft="20dp"
+                android:visibility="gone"
+                android:text="" />
+        <TextView
+                android:id="@+id/h6"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:textColor="#343434"
+                android:layout_marginLeft="20dp"
+                android:visibility="gone"
+                android:text="" />
+        <TextView
+                android:id="@+id/h7"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:textColor="#343434"
+                android:layout_marginLeft="20dp"
+                android:visibility="gone"
+                android:text="" />
+        <TextView
+                android:id="@+id/h8"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:textColor="#343434"
+                android:layout_marginLeft="20dp"
+                android:visibility="gone"
+                android:text="" />
+        <TextView
+                android:id="@+id/h9"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:textColor="#343434"
+                android:layout_marginLeft="20dp"
+                android:visibility="gone"
+                android:text="" />
+        <TextView
+                android:id="@+id/h10"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:textColor="#343434"
+                android:layout_marginLeft="20dp"
+                android:visibility="gone"
+                android:text="" />
+
+    </LinearLayout>
+     <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_container2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <ListView
+        android:id="@+id/alarm_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="0dp"
+        android:divider="#c3c3c3"
+        android:dividerHeight="1dip" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

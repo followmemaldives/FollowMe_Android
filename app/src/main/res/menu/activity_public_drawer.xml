@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/menu_top"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_public_list"
+            android:icon="@drawable/ic_directions_boat_black_24dp"
+            android:title="Public List" />
+        <item
+            android:id="@+id/nav_public_group"
+            android:icon="@drawable/boat_collections_black_48dp"
+            android:title="Public Group" />
+        <item
+                android:id="@+id/nav_public_fav"
+                android:icon="@drawable/star_border_black_36dp"
+                android:title="My Favourite" />
+    </group>
+    <group android:visible="false">
+        <item
+                android:id="@+id/nav_flight_schedule"
+                android:icon="@drawable/baseline_airplanemode_active_black_24dp"
+                android:title="Flight Schedule" />
+    </group>
+    <group>
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="Settings" />
+        <item
+                android:id="@+id/nav_buy"
+                android:icon="@drawable/baseline_router_black_36dp"
+                android:title="Buy Tracking Device" />
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_menu_share"
+            android:title="Recommend to friend" />
+        <item
+            android:id="@+id/nav_feedback"
+            android:icon="@drawable/ic_sentiment_neutral_black_24dp"
+            android:title="Feedback" />
+    </group>
+
+</menu>
